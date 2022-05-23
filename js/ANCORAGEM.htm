@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>ANCORAGEM</title>
+
+
+
+	<style type="text/css">
+	
+	body {
+	font-family: Verdana;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #333;
+	background:  #000;
+	min-width: 940px;
+
+
+	}
+	
+	#menu{
+	font-family: Impact, "Arial Black", sans-serif;
+	color: #696969;
+	text-transform: uppercase;
+	font-size: 20px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000000;
+	padding: 10px;
+	padding: .5rem;
+	margin: 0 0 0px 0;
+	
+	}
+	
+	#home {
+	height: 800px;
+	width: 100%;
+	background-color: #1E90FF;
+	}
+	
+	#quemsou {
+	padding-top:0px;
+	height: 700px;
+	width: 100%;
+	background-color: #1C86EE;
+	}
+	
+	#contato {
+	height:915px;
+	width:100%;
+	padding-top:0px;
+	background: #5F9EA0;
+	}
+
+	#creditos {
+	height:400px;
+	width:100%;
+	padding-top:0px;
+	background: #FFF;
+	text-color: #000;
+	}
+
+	
+	a:link, a:visited {
+	color:#696969;
+	text-decoration: none;
+	}
+
+	a:hover {
+	color: #CD5C5C;
+	text-decoration: none;
+	
+	}
+	
+	#Titulo{
+	font-size: 100px;
+	text-align: center;
+	padding-top: 20px;
+	}
+	
+	</style>
+	
+	  
+
+
+<script type="text/javascript" src="./ANCORAGEM_files/jquery.min.js"></script>
+<script type="text/javascript">// <![CDATA[
+$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 300);
+           return false;
+         });
+      }
+    }
+  });
+});
+// ]]></script>
+
+
+</head>
+<body>
+
+<div id="menu">
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#home">Home</a>
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#quemsou">Quem sou</a>
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#contato">Contato</a>
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#creditos">Créditos</a>
+</div>
+
+<div id="home">
+<div id="Titulo">OI! =D</div>
+SEJA MUITO BEM VINDO À PÁGINA TESTE. <br> FEITA PARA FINS DIDÁTICOS.<br>
+FOI UTILIZADO O RECURSO DE ANCORAGEM E jQuery.
+
+</div>
+
+<div id="quemsou">
+<div id="Titulo">QUEM SOU</div>
+OS SEUS TRABALHOS ENTRAM AQUI!<br>SERIA INTERESSANTE MOSTRÁ-LOS DE UMA FORMA ORGANIZADA.<br>
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#home">voltar ao topo</a>
+</div>
+
+<div id="contato">
+<div id="Titulo">CONTATO</div>
+ENTRE EM CONTATO.<br> QUE TAL UM FORMULÁRIO E OS LINKS PARA AS REDES SOCIAIS? <br>
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#home">voltar ao topo</a>
+</div>
+
+<div id="creditos">
+<div id="Titulo">CRÉDITOS</div>
+Tutorial por <a href="http://twitter.com/althi">Thiago Almeida</a> no <a href="http://chocoladesign.com/">Choco la Design.</a><br>
+jQuery: <a href="./ANCORAGEM_files/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js</a><br>
+<a href="http://chocoladesign.com/wp-content/uploads/2012/07/ancora.html#home">voltar ao topo</a>
+</div>
+
+
+
+</body></html>
